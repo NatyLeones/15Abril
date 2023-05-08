@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "Bold";
-    src: url(../Tipografías/daydream\ FREE.ttf);
+    src: url(./font/daydream\ FREE.ttf);
 }
 @font-face{
     font-family: "quattrocento";
-    src: url(../Tipografías/Quattrocento-Bold.ttf);
-    src: url(../Tipografías/Quattrocento-Regular.ttf);
+    src: url(./font/Quattrocento-Bold.ttf);
+    src: url(./font/Quattrocento-Regular.ttf);
     
 }
 
@@ -23,7 +23,7 @@ height: 133px;
 left: calc(50% - 185px/2 - 0.5px);
 top: 232px;
 
-font-family: 'Daydream';
+font-family: 'Bold';
 font-style: normal;
 font-weight: 400;
 font-size: 96px;
@@ -31,7 +31,7 @@ line-height: 133px;
 
 color: #BF8F31;
 border-radius: nullpx;
-font-family: Daydream;
+font-family: "Bold";
 font-size: 96px;
 font-weight: 400;
 line-height: 133px;
@@ -410,7 +410,7 @@ main{
 .hasta{
     position: absolute;
     width: 320px;
-    height: 14px;
+    height: 100px;
     left: calc(50% - 320px/2);
     top: 928px;
 
@@ -419,6 +419,7 @@ main{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+    
     /* identical to box height */
 
     text-align: center;
