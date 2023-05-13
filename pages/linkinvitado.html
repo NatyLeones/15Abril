@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/torre-eiffel-pag.png">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>QuinceAbril</title>
+</head>
+<body>
+    <div class="invitados"> Seleccione cantidad <br> de invitados</div>
+    <p class="mayores">1 Mayor</p> 
+    </script>
+    <div class="button mayor">
+        <script>
+            const mp = new MercadoPago('PUBLIC_KEY', {
+                locale: 'es-AR'
+            });
+            const checkout = mp.checkout({
+              preference: {
+                  id: 'YOUR_PREFERENCE_ID'
+              }
+            });
+        </script>	 	 
+        <div class="cho-container mayor">
+            <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+             data-preference-id="202579825-b36c595a-4870-4f2c-8c72-078c0991b72e" data-source="button">
+
+            <!-- Se pueden agregar estilos CSS personalizados para cambiar la apariencia del botón -->
+        </div>
+
+
+
+
+
+    </div>
+</body>
+</html>

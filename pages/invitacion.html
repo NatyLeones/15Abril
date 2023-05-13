@@ -13,28 +13,83 @@
 </head>
 <body>
     <div class="torrechica"> </div>
-    <p class="texto">Los momentos felices de la vida se tornan gratos cuando tenemos la suerte de compartirlos con los familiares y amigos más queridos y vos estás entre ellos.<br><br><br>
+    <p class="texto">Los momentos felices de la vida se tornan gratos cuando tenemos la suerte de compartirlos con los familiares y amigos más queridos y vos estás entre ellos.<br><br>
     Por ese motivo quiero festejar mi alegría y que vos estés presente.
-
     </p>
+
     <div class="misq">¡MIS QUINCE AÑOS!</div>
 
     <div class="lineas"></div>
 
     <div class="prueba"></div>
-    <div class="hora">21:00 HS</div>
-    <p class="lugar"> Lugar: Vecinal Pro Mejoras ALTO VERDE</p>
+    <div class="hora">20:30 HS</div>
+    <p class="texto horario">(Ser puntual)</p>
+    <p class="lugar"> Lugar: Vecinal Pro Mejoras ALTO VERDE <br>
+        Calle Principal - Manzana 5
 
-    <button class="button pagar" type="button" onclick="location.href='./pages/invitacion.html'">PAGAR TARJETA</button>
-    <p class="precios">Menores hasta 5 años inclusive: $3000 <br>
-        Mayores $5000</p>
+    </p>
+
+    <div class="modal" id="modal1">
+        <div class="modal__container__entrada">
+            <a href="#" class="modal__close">X</a>
+            
+            <P class="texto txt_modal">Datos para transferencia <br><br>
+                CBU: 3300506325060226791051 
+                <button class="clipboard" onclick="copyToClipboard('3300506325060226791051')"></button>
+                    <br><br>
+                    ALIAS: 15.abril.soratti <br><br>
+                    Titular: Rosillo Gastón
+                </P>
+        </div>
+    </div>
+    <a href="#modal1" class="boton btn_entrada">PAGAR TARJETA</a>
+ 
+    <p class="precios">Menores hasta 5 años inclusive: $ 3.500 <br>
+        Mayores $ 5.500</p>
     <p class="depositoregalo">Si deseás regalarme algo podes colaborar con mis sueños y anhelos. <br>
         ¡Muchas Gracias!</p>
-    <button class="button regalo" type="button" onclick="location.href='./pages/invitacion.html'">DEPOSiTO PARA REGALO</button>
+      
+    <!-- <a class="regalo" href="./linkinvitado.html" target="_blank">DEPOSITO PARA REGALO</a>    -->
+    
+    
 
     <p class="confirmar">CONFIRMAR ASISTENCIA</p>
     <div class="lineaizq"></div>
     <div class="lineader"></div>
     <p class="hasta">HASTA EL 1RO DE JULIO</p>
+
+   
+
+    <div class="modal" id="modal2">
+        <div class="modal__container">
+            <a href="#" class="modal__close">X</a>
+            <P class="texto txt_modal">Datos para transferencia <br><br>
+                CBU: 0170210340000010858969 
+                <!-- <img class="clipboard" src="../img/copypaste.png" alt="" onclick="copyToClipboard('0170210340000010858969')"> -->
+                <button class="clipboard" onclick="copyToClipboard('0170210340000010858969')"></button>
+                <br>
+                    <br>
+                    ALIAS: regalo.abril.soratti <br><br>
+                    Titular: Leones Natali
+
+                </P>
+
+        </div>
+    </div>
+    <a href="#modal2" class="boton btn_regalo">DEPOSITO PARA REGALO</a>
+
+
+    <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          console.log('Texto copiado al portapapeles');
+        })
+        .catch((error) => {
+          console.error('Error al copiar el texto: ', error);
+        });
+    }
+    </script>
+    
 </body>
 </html>
